@@ -1,0 +1,17 @@
+﻿0-rajouter des filtres sur les tableaux back
+
+0_b : rajouter la vérification de permis
+
+1-Reserver un véhicule -> ajouter un contrat
+	attention un véhicule doit apparaitre que une fois mais quand plusieurs option apparait plusieurs fois...oups
+	attention au statut d'entretien 1 si ne pose pas des problèmes
+
+2-Espace client =consulter profil/consulter contrat/modifier profil/modifier contrat/annuler contrat
+	créer les pages html/css
+	même système que back?accès rapide puis onglet?MON PROFIL /MES CONTRATS
+		mon profil : toutes les infos client (adresse permis....) avec possibilité de modifier ou désactiver le compte
+		mes contrats : contrat ok (avec possibilité d'imprimer)
+					en cours possibilité de modifier	
+					futur : avec possibilité d 'annuler/modifier
+
+3-Statistique : graph/chiffre d'affaire

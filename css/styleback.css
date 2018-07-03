@@ -1,0 +1,300 @@
+/* Feuille de style back end
+*
+* Dernière modification le 14/12/2017 à 16h00
+*
+* Par Pauline */
+html{
+  border:0;
+  background-color: white;
+}
+
+.bandeauadmin {
+  vertical-align: middle;
+  background-color: #980B0B;
+  display: block;
+
+}
+
+.bandeauadmin a {
+  color: white;
+  text-decoration: none;
+  font-family: arial;
+  line-height: 50px;
+}
+
+.bandeauadmin ul {
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  margin: auto;
+  padding: 0;
+}
+
+.bandeauadmin ul li {
+  display: inline-block;
+}
+
+.bandeauadmin ul li:hover {
+  background: #D10B0B;
+}
+
+.bandeauadmin ul li:hover ul {
+  display: block;
+}
+
+.bandeauadmin ul li ul {
+  position: absolute;
+  width: 300px;
+  display: none;
+}
+
+.bandeauadmin ul li ul li { 
+  background: #980B0B; 
+  display: block; 
+}
+
+.bandeauadmin ul li ul li a {
+  display:block !important;
+} 
+
+.bandeauadmin ul li ul li:hover {
+  background: #D10B0B;
+}
+
+.formulaire{
+  margin: auto;
+  text-align: left;
+  width: 600px; 
+}
+
+.formulaire input{
+  text-align: left;
+}
+
+.formulaire label{
+  display: block;
+  float: left;
+  width: 350px;
+}
+
+.contenuform {
+  margin-top: 40px;
+  font-family: arial;
+}
+
+.contenuformbis {
+  margin-top: 10px;
+  font-family: arial;
+
+}
+
+.contenu {
+  margin-top: 50px;
+  font-size: x-large;
+  font-style: bold;
+  font-family: arial;
+}
+
+.contenuCenter {
+  margin-top: 20px;
+  font-size: x-large;
+  font-style: bold;
+  font-family: arial;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.imagepersonne {
+    width: 65px;
+    height: 65px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 40px;
+}
+
+.imagevoiture{
+  width: 65px;
+    height: 65px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 140px;
+}
+
+#leboutondenathalie {
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+}
+
+.logopower {
+  width: 150px;
+    z-index: 1;
+    position: absolute;
+}
+
+
+
+/* Style Tableau */
+.table-fill {
+  background: white;
+  border-radius:3px;
+  margin: auto;
+  max-width: 1400px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:16px;
+  font-weight: 100;
+  padding:10px;
+  border-radius: 6px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  border-radius: 6px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:16px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+
+ /** fin style tableau **/
+
+ .alert2 {
+  width: 150px;
+  height :100px;
+  margin: auto;
+  margin-top: 50px;
+  font-size: x-large;
+  font-style: bold;
+  font-family: arial;
+  text-align: center;
+  color:black;
+}
+
+.inactif {
+  color:red;
+}
+
+.gif{
+  vertical-align: middle;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #555; 
+  width: 200px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+.gif2{
+  vertical-align: middle;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #555; 
+  width: 200px;
+  margin-top : 50px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.alert {
+  color:#980B0B;
+  font-size:40px;
+  text-align: center;
+  font-family: arial;
+}

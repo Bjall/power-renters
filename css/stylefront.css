@@ -1,0 +1,602 @@
+/* Feuille de style front end
+*
+* Dernière modification le 12/12/2017 à 15h00
+*
+* Par Benoit */
+
+html {
+    border:0;
+}
+
+body {
+    background-color:white;
+}
+
+/* Navbar front */
+#navbar {
+    width:100%;
+    background-color:white;
+    height:60px;
+    margin-top: -24px;
+    display:flex;
+    justify-content:space-around;
+    font-family:'Anton', sans-serif;
+}
+
+#navbar li {
+    display:inline;
+    margin-left:30px;
+}
+
+#navbar li a {
+    text-decoration:none;
+    color:black;
+    padding:9px 16px;
+}
+
+#navbar a:hover {
+    background-color:#FFE22A;
+}
+
+#navbar > ul > li {
+    float:left;
+    position:relative;
+}
+
+#navbar a {
+    display:inline-block;
+    text-decoration:none;
+}
+
+.menu-deroulant {
+    margin:0px;
+    padding:0px;
+    display:inline-block;
+}
+
+.menu-deroulant > ul > li > a {
+    padding:20px 30px;
+}
+
+.submenu > li {
+    float:left;
+    list-style-type:none;
+}
+
+.submenu {
+    display:none;
+}
+
+nav li:hover .submenu {
+    display:inline-block;
+    position:absolute;
+    top:100%;
+    left:0px;
+    padding:0px;
+    z-index:100000;
+    margin-left:-30px;
+}
+
+.submenu::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.submenu li {
+    border-bottom:1px solid #CCC;
+    background-color: white;
+    display:block;
+}
+
+.submenu li a {
+    padding:15px 30px;
+    font-size:15px;
+    color:black;
+    width:160px;
+}
+
+
+
+/* Bandeau sous la navbar front */
+#bandeau {
+    background-color:black;
+    height:100px;
+    font-family:'Anton', sans-serif;
+}
+
+#elements-bandeau {
+	display: flex;
+	flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:-0.7px;
+    list-style-type:none;
+}
+
+#bandeau img {
+	height:80px;
+	margin-top:10px;
+}
+
+#marque {
+    color:white;
+    text-align:center;
+    margin:auto;
+    font-size:40px;
+    margin-right:3rem;
+}
+
+#slogan {
+	color:white;
+	list-style-type:none;
+	font-size:30px;
+    font-style:italic;
+    margin:auto;
+}
+
+#titre_page {
+    display:block;
+    justify-content:space-between;
+}
+
+article h1 {
+    font-family:'Anton', sans-serif;
+    font-size:40px;
+    text-align:center;
+}
+
+article h2 {
+    font-family:'Anton', sans-serif;
+    font-size:30px;
+    text-align:center;
+}
+
+article p {
+    font-family:'Anton', sans-serif;
+}
+
+#gmap {
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:40px;
+}
+
+#contact {
+    text-align:center;
+}
+
+#contact > p {
+    font-size:120px;
+    color:red;
+}
+
+
+
+/* Formulaire de recherche d'un véhicule */
+#container1 {
+    background-image:url('../images/bluecar_50.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.myform {
+    background-color:rgba(0,0,0,0.7) ;
+    width:20%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    border-radius: 2%;
+    border:solid;
+    border-color:white;
+    border-width: 1px;
+    display:flex;
+    flex-direction: column;
+    font-family:'Roboto', sans-serif;
+}
+
+.formtitre {
+    display:block;
+    width:250px;
+    float:left;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.formfirstinput {
+    line-height:10px;
+    margin-bottom:30px;
+    width:100%;
+    font-family:'Roboto', sans-serif;
+}
+
+.radiolist {
+    display:flex;
+    flex-direction:row;
+}
+
+.radiolistcol {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    width:60%;
+}
+
+.radiolistitem {
+    line-height:40px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.icone {
+    height:35px;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.validation {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.ok {
+    padding:10px;
+    font-family:'Roboto', sans-serif;
+    width:70%;
+    background-color:transparent;
+    border-width:1.5px;
+    border-color:white;
+    color:white;
+    font-size:18px;
+    border-radius:5%;
+}
+
+.ok:hover {
+    background-color:#FFE22A;
+    color:black;
+    cursor:pointer;
+}
+
+
+
+/* Formulaire de connexion */
+#formulaire-connexion {
+    font-family:'Fira Sans', sans-serif;
+    margin-top:200px;
+    background-color:rgba(0,0,0,0.7) ;
+    width:30%;
+    text-align:justify;
+    margin:auto;
+    padding:30px;
+    line-height:10px;
+    color:white;
+    border-radius:10px;
+    border:solid;
+    border-color:white;
+    border-width: 2px:;
+}
+
+
+
+/* Formulaire d'inscription */
+#formulaire-inscription {
+    font-family:'Fira Sans', sans-serif;
+    color:white;
+    background-color:rgba(0,0,0,0.7);
+    width:500px;
+    border-radius:10px;
+    border:solid;
+    border-color:white;
+    border-width:1px:;
+    margin:auto;
+    text-align:left;
+}
+
+form legend {
+    margin-top:20px;
+    margin-bottom:30px;
+    font-size:24px;
+    text-align:center;
+}
+
+.formradio {
+    margin-bottom:20px;
+}
+
+.formlabel {
+    display:block;
+    float:left;
+    width:200px; 
+    font-weight: bold;
+    margin-left:20px;
+}
+
+.forminput {
+    margin-bottom:20px;
+    width:250px;
+}
+
+#label-stat-combo {
+    margin-top:10px;
+}
+
+.combo {
+    margin-top:5px;
+    margin-bottom:20px;
+    width:250px;
+}
+
+#checkbox-validation {
+    display:flex;
+    margin:15px 28px 0px 15px;
+    text-align:justify;
+}
+
+#checkbox-validation label {
+    margin-left:5px;
+}
+
+#bouton-inscription {
+    padding:10px;
+    font-family:'Roboto', sans-serif;
+    width:70%;
+    background-color:transparent;
+    border-width:1.5px;
+    border-color:white;
+    color:white;
+    font-size:18px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+#bouton-inscription:hover {
+    background-color:#FFE22A;
+    color:black;
+    cursor:pointer;
+}
+
+
+
+/* Liste des véhicules */
+#container2 {
+    width:1503px;
+    background-color:#E8E8DF;
+    margin:auto;
+    font-family: 'Anton', sans-serif;
+    font-size:1em;
+}
+
+.liste_vehicule {
+    width:1050px;
+    background-color:white;
+    margin:auto;
+}
+
+.liste_vehicule > h1 {
+    margin:0px 0px 10px 25px;
+    padding-top: 10px;
+}
+
+.vehicule_fiche {
+    height:285px;
+    width:1000px;
+    background-color:white;
+    margin:auto;
+    margin-top:20px;
+    display:flex;
+    border: solid 1px #E8E8DF;
+    font-size:18px;
+}
+		
+.vehicule_left {
+    height:245px;
+    width:400px;
+    margin:20px 0px 20px 20px;
+}
+
+.vehicule_middle {
+    width:300px;
+    margin-top:50px;
+}
+
+#categorie {
+    font-size:15px;
+    color:grey;
+    padding-left:20px;
+}
+
+#prix_par {
+    margin-top:50px;
+    background-color:#E8E8DF;
+    width:300px;
+    padding-left:10px;
+    padding-top: 2px;
+    height: 53px;
+    font-size:16px;
+}
+
+#prix {
+    margin-left:60px;
+    font-size:30px;
+}
+
+.vehicule_right {
+    width:300px;
+    margin-top:50px;
+    line-height: 180%;
+}
+
+.vehicule_right ul {
+    list-style:none;
+}
+
+.icone {
+    height:15px;
+    width:15px;
+    margin-right:10px;
+}
+
+.vehicule_right a {
+    display:block;
+    background-color:#FFE22A;
+    width:240px;
+    height:45px;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px;
+    color:black;
+    font-size:25px;
+    margin:auto;
+}
+
+.vehicule_right a:hover {
+    background-color:#FFE750;
+}
+
+
+
+/* Fiche d'un véhicule */
+#container3 {
+    width:1503px;
+    background-color:#E8E8DF;
+    margin:auto;
+    font-family: 'Anton', sans-serif;
+    font-size:1em;
+}
+
+.fiche {
+    display:flex;
+}
+
+.fiche_photo {
+    height:245px;
+    width:400px;
+}
+
+.fiche_details {
+    margin-left:20px;
+}
+
+#veh_nom {
+    margin-top:80px;
+    font-size:35px;
+    margin-bottom:0;
+}
+
+#veh_modele {
+    font-size:16px;
+    color:#ED1C24;
+    margin-top:0;
+    margin-left:20px;
+}
+
+#prix_veh {
+    margin-top:20px;
+}
+
+#tarif {
+    font-size:35px;
+    margin-left:20px;
+}
+
+.myform_fiche {
+    background-color:rgba(0,0,0,0.7) ;
+    width:90%;
+    text-align: justify;
+    margin:auto;
+    padding: 30px;
+    line-height: 10px;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form_part {
+    width:50px;
+}
+
+.formsecondinput {
+    width:100px;
+}
+
+#gps {
+    width:140px;
+    height:100px;
+}
+
+#siege {
+    width:140px;
+    height:140px;
+}
+
+#accessoires {
+    margin-top:100px;
+    height:500px;
+
+}
+
+.myform_fiche a {
+    display:block;
+    background-color:#FFE22A;
+    width:240px;
+    height:45px;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px;
+    color:black;
+    font-size:25px;
+    margin:auto;
+}
+
+
+
+/* Page options */
+.accessoireliste {
+    display:flex;
+    flex-direction: row;
+}
+
+.accessoireliste li {
+    list-style-type: none;
+}
+
+
+
+/* Infos */
+.message_info {
+    background-color:green;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    height:100px;
+    width:100%;
+    position:absolute;
+    z-index:10;
+    padding-left:10px
+    border-radius:10px;
+}
+
+
+
+/* Footer */
+footer {
+    text-align:center;
+}
+
+
+
+/* Erreur */
+.erreur {
+    display:flex;
+    justify-content:space-around;
+    margin-top:50px;
+
+}
